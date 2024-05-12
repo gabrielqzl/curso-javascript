@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos Open, Close, Closed y Stop</title>
+</head>
+<body>
+    <button onclick="abrirVentana()">Abrir Ventana</button>
+    <button onclick="cerrarVentana()">Cerrar Ventana</button>
+    <button onclick="verificarEstadoVentana()">Verificar Estado de Ventana</button>
+    <button onclick="detenerCarga()">Detener Carga</button>
+
+    <script>
+        let ventanaAbierta;
+
+        function abrirVentana() {
+            ventanaAbierta = window.open("https://www.ejemplo.com", "_blank");
+        }
+
+        function cerrarVentana() {
+            if (ventanaAbierta && !ventanaAbierta.closed) {
+                ventanaAbierta.close();
+            }
+        }
+
+        function verificarEstadoVentana() {
+            if (ventanaAbierta) {
+                if (ventanaAbierta.closed) {
+                    alert("La ventana está cerrada.");
+                } else {
+                    alert("La ventana está abierta.");
+                }
+            } else {
+                alert("No se ha abierto ninguna ventana.");
+            }
+        }
+
+        function detenerCarga() {
+            window.stop();
+        }
+    </script>
+</body>
+</html>

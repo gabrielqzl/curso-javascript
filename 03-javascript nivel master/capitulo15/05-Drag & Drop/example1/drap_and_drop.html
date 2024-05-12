@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag & Drop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Drag & Drop</h1>
+  
+  <!-- Elemento arrastrable -->
+  <div class="drag-item" draggable="true" id="drag-item">Arrastrar</div>
+
+  <!-- Área de soltar -->
+  <div class="drop-area" id="drop-area">Soltar aquí</div>
+
+  <script>
+    // Función para permitir el soltar
+    function allowDrop(event) {
+      event.preventDefault();
+    }
+
+    // Función para manejar el inicio del arrastre
+    function dragStart(event) {
+      event.dataTransfer.setData("text/plain", event.target.id);
+    }
+
+    // Función para manejar el soltar
+    function drop(event) {
+      event.preventDefault();
+      var data = event.dataTransfer.getData("text/plain");
+      event.target.appendChild(document.getElementById(data));
+    }
+  </script>
+</body>
+</html>

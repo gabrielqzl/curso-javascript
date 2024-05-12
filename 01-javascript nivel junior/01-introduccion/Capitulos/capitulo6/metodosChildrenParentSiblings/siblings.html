@@ -1,0 +1,24 @@
+<!-- Propiedades de siblings (Hermanos)
+Para acceder a los nodos hermanos de un elemento, puedes utilizar las propiedades previousSibling y nextSibling. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Siblings Demo</title>
+</head>
+<body>
+    <div id="parent">
+        <p>First Child</p>
+        <p id="middleChild">Middle Child</p>
+        <p>Last Child</p>
+    </div>
+
+    <script>
+        const middleChildElement = document.getElementById('middleChild');
+        const previousSibling = middleChildElement.previousSibling;
+        const nextSibling = middleChildElement.nextSibling;
+        console.log(previousSibling);
+        console.log(nextSibling);
+    </script>
+</body>
+</html>

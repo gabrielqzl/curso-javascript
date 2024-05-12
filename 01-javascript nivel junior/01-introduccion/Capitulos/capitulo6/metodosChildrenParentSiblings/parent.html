@@ -1,0 +1,20 @@
+<!-- Propiedades de parent (Padres)
+La propiedad parentNode se utiliza para acceder al nodo padre de un elemento determinado. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parent Demo</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="child">Child</p>
+    </div>
+
+    <script>
+        const childElement = document.getElementById('child');
+        const parentElement = childElement.parentNode;
+        console.log(parentElement);
+    </script>
+</body>
+</html>

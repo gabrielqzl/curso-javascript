@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos alert, print, prompt y confirm</title>
+</head>
+<body>
+    <button onclick="mostrarAlerta()">Mostrar Alerta</button>
+    <button onclick="imprimirPagina()">Imprimir Página</button>
+    <button onclick="pedirNombre()">Pedir Nombre</button>
+    <button onclick="confirmarAccion()">Confirmar Acción</button>
+
+    <script>
+        function mostrarAlerta() {
+            alert("¡Hola mundo!");
+        }
+
+        function imprimirPagina() {
+            window.print();
+        }
+
+        function pedirNombre() {
+            const nombre = prompt("Por favor, ingresa tu nombre:");
+            if (nombre !== null) {
+                alert("Hola, " + nombre + ". ¡Bienvenido!");
+            }
+        }
+
+        function confirmarAccion() {
+            const confirmado = confirm("¿Estás seguro de continuar?");
+            if (confirmado) {
+                alert("Acción confirmada.");
+            } else {
+                alert("Acción cancelada.");
+            }
+        }
+    </script>
+</body>
+</html>

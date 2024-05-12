@@ -1,0 +1,22 @@
+# Diferencia entre GET y POST
+
+La diferencia principal entre los métodos GET y POST en HTTP radica en cómo se envían los datos al servidor y cómo manejan los navegadores web y los servidores esas solicitudes.
+
+## Método GET
+Envío de datos: Los datos se envían como parte de la URL en la línea de consulta (query string).
+Visibilidad de datos: Los datos son visibles en la URL del navegador.
+Restricción de tamaño: Limitado por la longitud máxima de la URL (generalmente alrededor de 2048 caracteres).
+Seguridad: Menos seguro que POST, ya que los datos se muestran en la URL.
+Cacheable: Los resultados de las solicitudes GET se pueden cachear.
+Idempotencia: Las solicitudes GET son idempotentes, lo que significa que múltiples solicitudes GET del mismo recurso devolverán el mismo resultado.
+El método GET es adecuado para solicitar datos del servidor cuando los datos no contienen información sensible y cuando se pueden mostrar en la URL.
+
+## Método POST
+Envío de datos: Los datos se envían en el cuerpo de la solicitud HTTP.
+Visibilidad de datos: Los datos no son visibles en la URL del navegador.
+Restricción de tamaño: No hay restricción de tamaño impuesta por el método POST.
+Seguridad: Más seguro que GET, ya que los datos no se muestran en la URL.
+No cacheable: Los resultados de las solicitudes POST no se pueden cachear.
+No idempotente: Las solicitudes POST no son idempotentes, lo que significa que múltiples solicitudes POST del mismo recurso pueden tener diferentes efectos.
+El método POST es adecuado para enviar datos al servidor cuando los datos contienen información sensible, como credenciales de inicio de sesión o datos personales, y cuando los datos son demasiado grandes para incluirlos en la URL.
+

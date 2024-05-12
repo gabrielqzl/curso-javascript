@@ -1,0 +1,22 @@
+# --------- CAPITULO 16 ---------
+
+- MatchMedia - 5:15:07
+- Intersection Observer - 5:26:41
+- Lazy Load - 5:41:42
+- Notifications  - 6:11:42
+- Web Workers - 6:16:56
+- Same Origin Politic - 6:35:53
+- Objeto Navigator - 6:47:22
+- Memoization - 7:03:47
+- Caché - 7:14:44
+- Service Workers - 7:35:40
+- Reto del Chat Realtime - 7:56:59
+- Cachear sitio web y mostrarlo offline - 7:59:26
+- Cookies - 8:11:16
+- Crear aviso de uso de cookies - 8:35:36
+- Objeto Screen - 8:43:31
+- Objeto Canvas - 8:50:17
+- Crear un web paint - 9:07:58
+- Próximo nivel y felicitaciones - 9:19:41
+- Agradecimientos especiales - 9:22:16
+- Frase final y cierre de nivel - 9:22:49

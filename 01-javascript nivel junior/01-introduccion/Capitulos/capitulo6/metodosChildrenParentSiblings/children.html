@@ -1,0 +1,23 @@
+<!-- Métodos de children (Hijos)
+En JavaScript, puedes acceder a los hijos de un elemento HTML utilizando la propiedad children. Esta propiedad devuelve una colección de los elementos secundarios de un nodo en forma de array. -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Children Demo</title>
+</head>
+<body>
+    <div id="parent">
+        <p>Child 1</p>
+        <p>Child 2</p>
+        <p>Child 3</p>
+    </div>
+
+    <script>
+        const parentElement = document.getElementById('parent');
+        const children = parentElement.children;
+        console.log(children);
+    </script>
+</body>
+</html>
